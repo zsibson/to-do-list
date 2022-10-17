@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/public/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+    <title>To-Do List App</title>
+  </head>
+  <body>
+    <h1>Get things Done!</h1>
+
+    <div class="todo-container">
+      <h2>To-Do List</h2>
+      <div class="todo">
+        <form action="/" method="POST" class="todo-header">
+          <input type="text" name="content" autocomplete="off" />
+          <button type="submit"><span class="fa fa-plus"></span></button>
+        </form>
+        <ul class="todo-list">
+          <% todoTasks.forEach(details => { %>
+          <li class="todo-list-item">
+            <div class="todo-list-item-name"><%= details.content %></div>
+            <a href="/remove/<%= details._id %>" class="remove">
+              <span class="fas fa-times"></span>
+            </a>
+          </li>
+          <% }) %>
+        </ul>
+      </div>
+    </div>
+
+  </body>
+</html>
