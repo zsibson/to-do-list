@@ -10,5 +10,5 @@ Built with node.js, express.js, mongodb, and ejs.
 `npm i mongoose`
 `npm i dotenv`
 
-![project screenshot]<img width="1440" alt="todo-list" src="https://user-images.githubusercontent.com/70235818/196073662-21ba76b1-e97b-4e32-8452-8e5b89be0844.png">
+<img width="1440" alt="todo-list" src="https://user-images.githubusercontent.com/70235818/196073662-21ba76b1-e97b-4e32-8452-8e5b89be0844.png">
 
